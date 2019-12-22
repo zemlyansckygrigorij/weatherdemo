@@ -12,7 +12,7 @@ import java.util.List;
 public class WeatherRestController {
     private final WeatherService weatherService ;
 
-    public WeatherRestController(@Qualifier("yandexWeatherService") WeatherService weatherService){
+    public WeatherRestController(@Qualifier("weatherAggregationService") WeatherService weatherService){
         this.weatherService = weatherService;
     }
 
